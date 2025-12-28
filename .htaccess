@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /primus-panel/
+
+# Se o ficheiro ou diretório existe, serve normalmente
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Tudo o resto vai para index.php do painel
+RewriteRule ^ index.php [L]

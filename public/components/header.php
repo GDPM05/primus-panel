@@ -25,6 +25,9 @@
             <li class="home">
                 <a href="<?php echo BASE_URL; ?>">Home</a>
             </li>
+            <li class="stats">
+                <a href="<?php echo BASE_URL . 'stats';?>">Stats</a>
+            </li>
         </ul>
     </nav>
     
