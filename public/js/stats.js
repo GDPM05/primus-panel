@@ -1,8 +1,11 @@
 $(()=> {
 
-    let uptime_initial_value = $("#uptime_time").text();
+    let uptime_initial_value = $("#uptime_time").text().trim();
     let uptime_time_arr = uptime_initial_value.split(' ').map((v) => v.replace(/\D/g, ''));
     
+    console.log(uptime_initial_value);
+    console.log(uptime_time_arr);
+
     setInterval(function() {
         uptime_time_arr[2] = Number.parseInt(uptime_time_arr[2]) + 1;
 
